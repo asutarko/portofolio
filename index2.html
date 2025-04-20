@@ -22,6 +22,18 @@
       text-align: center;
     }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* gelap transparan */
+      z-index: 1;
+    }
+    .hero * {
+      z-index: 2;
+}
+
+
     .bio {
       height: 100vh;
       background: white;
@@ -55,7 +67,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li> -->
         </ul>
       </div>
     </div>
@@ -125,29 +137,91 @@
   <section id="experience" class="bio section bg-light">
     <div class="container" data-aos="fade-up">
       <h2 class="text-center mb-4">Work Expriences</h2>
-      <ul>
-        <li><strong>PT. Gautama Indah Perkasa</strong> (2022–2024)
-          <ul>
-            <li>Maintain ERP</li>
-            <li>Bug fixing, import data e-commerce</li>
-            <li>Email & printer support</li>
-          </ul>
-        </li>
-        <li><strong>PT. Gotrans Indonesia</strong> (2020–2022)
-          <ul>
-            <li>Develop apps: Driver, Customer, Merchant</li>
-          </ul>
-        </li>
-        <li><strong>PT. Missiidea Selaras</strong> (2014–2020)
-          <ul>
-            <li>Develop Dashboard, Promo System, Inventory, Absensi</li>
-          </ul>
-        </li>
-      </ul>
+      <div style="overflow-y:auto;height:90%;">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Company Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Last Nov 2022– Oct 2024</td>
+              <td>PT. Gautama Indah Perkasa</td>
+              <td> 
+                <ul>
+                  <li>Backup Company Email server</lii>
+                  <li>Fix bugs of ERP Application</lii>
+                  <li>Help user to resolve their printer problem</li>
+                  <li>Develop ERP Enrollment</li>
+                  <li>Import data Ecommerce platform such as Gogobli, Astro</li>    
+                  <li>Maintain ERP Application</li>  
+                  <li>Add Checklist into ERP Application</li>    
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>2020–2022</td>
+              <td>PT. Gotrans Indonesia</td>
+              <td> 
+                <ul>
+                  <li>Backup Company Email server</lii>
+                  <li>Fix bugs of ERP Application</lii>
+                  <li>Help user to resolve their printer problem</li>
+                  <li>Develop ERP Enrollment</li>
+                  <li>Import data Ecommerce platform such as Gogobli, Astro</li>    
+                  <li>Maintain ERP Application</li>  
+                  <li>Add Checklist into ERP Application</li>    
+                </ul>
+              </td>
+            </tr>  
+            <tr>
+              <td>2014–2020</td>
+              <td>PT. Missiidea Selaras</td>
+              <td> 
+                <ul>
+                  <li>Develop Dashboard Courier</li>
+                  <li>Develop Lottery System </li>
+                  <li>Develop Digital Application</li>
+                  <li>Develop PPOB</li>
+                  <li>Develop Semen Tiga Roda Promotion</li>
+                  <li>Develop Sonice Promotion</li>
+                  <li>Develop Panasonic Promotion</li>
+                  <li>Backup Database Server </li>
+                  <li>Backup Email Server</li>
+                  <li>Develop Absence System</li>
+                  <li>Develop Inventory System</li>
+                </ul>
+              </td>
+            </tr>  
+            <tr>
+              <td>2014–2020</td>
+              <td>PT. Missiidea Selaras</td>
+              <td> 
+                <ul>
+                  <li>Develop Dashboard Courier</li>
+                  <li>Develop Lottery System </li>
+                  <li>Develop Digital Application</li>
+                  <li>Develop PPOB</li>
+                  <li>Develop Semen Tiga Roda Promotion</li>
+                  <li>Develop Sonice Promotion</li>
+                  <li>Develop Panasonic Promotion</li>
+                  <li>Backup Database Server </li>
+                  <li>Backup Email Server</li>
+                  <li>Develop Absence System</li>
+                  <li>Develop Inventory System</li>
+                </ul>
+              </td>
+            </tr>  
+          </tbody>  
+        </table>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact
   <section id="contact" class="bio section">
     <div class="container" data-aos="fade-up">
       <h2 class="text-center mb-4">Contact Me</h2>
@@ -166,7 +240,7 @@
         </div>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="fixed-bottom text-center py-2">
