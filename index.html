@@ -1,158 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Portofolio</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="assets/css/custom.css" rel="stylesheet" />
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      padding-bottom: 80px;
+      background: url('assets/images/programmer.png') center center / cover no-repeat;
+      background-attachment: fixed;
+    }
+    .hero {
+      height: 100vh;
+      /* background: url('assets/images/programmer.png') center center / cover no-repeat; */
+      /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!--[if lt IE 9]-->
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <!--[endif]-->
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row inset-shadow-indigo-500">
-                <div class="col-lg-2 bg-blue-500 border-1 border-solid p-3 text-center">
-                    <img class="mx-auto mb-3" src="assets/images/andre.jpeg">
-                    <div class="mb-3">
-                        <span class="font-bold">Name</span>
-                        <p>Andre</p>
-                    </div>
-                    <div class="mb-3">
-                        <span class="font-bold">Gender</span>
-                        <p>Male</p>
-                    </div>
-                    <div class="mb-3">
-                        <span class="font-bold">Place/Date Of Birth</span>
-                        <p>Jakarta, 23 March 1979</p>
-                    </div>
-                    <div class="mb-3">
-                        <span class="font-bold">Mobile Number</span>
-                        <p><a href="tel:+6281992143798">081992143798</a></p>
-                    </div>
-                    <div class="mb-3">
-                        <span class="font-bold">Email Address</span>
-                        <p><a href="mailto:asutarko1979@gmail.com">asutarko1979@gmail.com</a></p>
-                    </div>
-                    <div class="mb-3">
-                        <span class="font-bold">Hobby</span>
-                        <p>Learning new anything, reading</p>
-                    </div>
-                    <div class="px-2">
-                        <span class="font-bold">Skills</span>
-                        <div class="row text-sm">
-                            <div class="col-md-3">php</div>
-                            <div class="col-md-3">java</div>
-                            <div class="col-md-3">Nodejs</div>
-                            <div class="col-md-3">css</div> 
-                        </div>    
-                        <div class="row text-sm">
-                            <div class="col-md-3">html</div>
-                            <div class="col-md-3">flutter</div>
-                            <div class="col-md-3">MySQL</div>
-                            <div class="col-md-3">SqlServer</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-10 border-1 p-3">
-                    <h2 class="text-center font-bold text-3xl mb-3">Cirriculum Vitae</h2>
-                    <h3 class="font-bold">Personal Data</h3>
-                    <table class="table table0-responsive">
-                        <tbody>
-                            <tr>
-                                <th class="col-lg-2">Address</th>
-                                <td>
-                                    Jl. Gn Slamet Blok C/22 Giriloka 2 BSD City Sector IV<br>
-                                    BSD City - Tangerang Selatan 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Kode Pos</th>
-                                <td>15322</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h3 class="font-bold mt-5">Education Background</h3>
-                    <table class="table table0-responsive">
-                        <tbody>
-                            <tr>
-                                <th class="col-lg-2">2003-2005</th>
-                                <td>Binusian University, Majoring in Master Information Technology System</td>
-                            </tr>
-                            <tr>
-                                <th>1998-2003</th>
-                                <td>Binusian University, Majoring in Information Technology</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h3 class="font-bold mt-5">Work Experiences</h3>
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* gelap transparan */
+      z-index: 1;
+    }
+    .hero * {
+      z-index: 2;
+    }
 
-                    <table class="table table0-responsive">
-                        <tbody>
-                            <tr>
-                                <th class="col-lg-2">23 Nov 2022- 30 Oct 2024</th>
-                                <td>
-                                    <h3 class="font-bold">PT. Gautama Indah Perkasa</h3>
-                                    <p class="font-bold">JobDesk :</p>
-                                    <ul class="px-3">
-                                        <li class="list-inside list-disc">Backup Company Email server</lii>
-                                        <li class="list-inside list-disc">Fix bugs of ERP Application</lii>
-                                        <li class="list-inside list-disc">Help user to resolve their printer problem</li>
-                                        <li class="list-inside list-disc">Develop ERP Enrollment</li>
-                                        <li class="list-inside list-disc">Import data Ecommerce platform such as Gogobli, Astro</li>    
-                                        <li class="list-inside list-disc">Maintain ERP Application</li>  
-                                        <li class="list-inside list-disc">Add Checklist into ERP Application</li>    
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2020-2022</th>
-                                <td>
-                                    <h3 class="font-bold">PT. Gotrans Indonesia</h3>
-                                    <p class="font-bold">JobDesk :</p>
-                                    <ul class="px-3">
-                                        <li class="list-inside list-disc">Develop Gotrans Customer</li>
-                                        <li class="list-inside list-disc">Develop Gotrans Driver</li>
-                                        <li class="list-inside list-disc">Develop Gotrans Merchants</li>
-                                        <li class="list-inside list-disc">Develop Dasboard Gotrans</li>
-                                        <li class="list-inside list-disc">Develop Gotrans PPOB</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>2014-2020</th>
-                                <td>
-                                    <h3 class="font-bold">PT. Missiidea Selaras</h3>
-                                    <p class="font-bold">JobDesk :</p>
-                                    <ul class="px-3">
-                                        <li class="list-inside list-disc">Develop Dashboard Courier</li>
-                                        <li class="list-inside list-disc">Develop Lottery System </li>
-                                        <li class="list-inside list-disc">Develop Digital Application</li>
-                                        <li class="list-inside list-disc">Develop PPOB</li>
-                                        <li class="list-inside list-disc">Develop Semen Tiga Roda Promotion</li>
-                                        <li class="list-inside list-disc">Develop Sonice Promotion</li>
-                                        <li class="list-inside list-disc">Develop Panasonic Promotion</li>
-                                        <li class="list-inside list-disc">Backup Database Server </li>
-                                        <li class="list-inside list-disc">Backup Email Server</li>
-                                        <li class="list-inside list-disc">Develop Absence System</li>
-                                        <li class="list-inside list-disc">Develop Inventory System</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>   
-        </div>    
+    .bio {
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      /* background: transparent; */
+      color: white;
+      display: flex;
+      justify-content: justify;
+      align-items: start;
+      flex-direction: justify;
+    }
 
-        <!-- JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+    
+
+
+    footer {
+      background-color: #1e3c72;
+      color: white;
+    }
+    .section {
+      padding: 80px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#home">My Portofolo</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1 data-aos="fade-down">Hello, I'm Andre</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Programmer | Web & Mobile Developer</p>
+    <a href="#about" class="btn btn-light mt-3" data-aos="zoom-in" data-aos-delay="400">Lihat Profil</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bio section ">
+    <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-justify">I am an experienced developer from Jakarta, I love to learn new things and read. I love new challenges to new programming languages. Learning programming languages ​​is not easy, it takes a process to understand new programming languages.</p>
+        <table class="table table-responsive">
+            <tbody>
+                <tr>
+                    <td>Email Address</td>
+                    <td><a href="mailto:asutarko1979@gmail.com">asutarko1979@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>My Mobile Number</td>
+                    <td><a href="tel:+6281992143798">0819-9214-3798</a></td>
+                </tr>
+                <tr>
+                    <td>Place/Date of Birth</td>
+                    <td>Jakarta, 23 March 1979</td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>Indonesian Citizen</td>
+                </tr>
+                <tr>
+                    <td>My hobby</td>
+                    <td>Learn programming languages ​to gain new knowledge, reading, listening music</td>
+                </tr>
+                <tr>
+                  <td>My Languages</td>
+                  <td>Indonesian Language, English Language (Passive)</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bio section">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Skill</h2>
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-3">PHP</div>
+        <div class="col-6 col-md-3 mb-3">Java</div>
+        <div class="col-6 col-md-3 mb-3">Flutter</div>
+        <div class="col-6 col-md-3 mb-3">Node.js</div>
+        <div class="col-6 col-md-3 mb-3">HTML</div>
+        <div class="col-6 col-md-3 mb-3">CSS</div>
+        <div class="col-6 col-md-3 mb-3">MySQL</div>
+        <div class="col-6 col-md-3 mb-3">SQL Server</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bio section ">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Work Expriences</h2>
+      <div style="overflow-y:scroll;height:738px;background-color:white">
+        <table class="table table-responsive">
+          <thead style="position: sticky; top: 0; background-color: white; z-index: 2;">
+            <tr>
+              <th>Year</th>
+              <th>Company Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Last Nov 2022– Oct 2024</td>
+              <td>PT. Gautama Indah Perkasa</td>
+              <td> 
+                <ul>
+                  <li>Backup Company Email server</lii>
+                  <li>Fix bugs of ERP Application</lii>
+                  <li>Help user to resolve their printer problem</li>
+                  <li>Develop ERP Enrollment</li>
+                  <li>Import data Ecommerce platform such as Gogobli, Astro</li>    
+                  <li>Maintain ERP Application</li>  
+                  <li>Add Checklist into ERP Application</li>    
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>2020–2022</td>
+              <td>PT. Gotrans Indonesia</td>
+              <td> 
+                <ul>
+                  <li>Backup Company Email server</lii>
+                  <li>Fix bugs of ERP Application</lii>
+                  <li>Help user to resolve their printer problem</li>
+                  <li>Develop ERP Enrollment</li>
+                  <li>Import data Ecommerce platform such as Gogobli, Astro</li>    
+                  <li>Maintain ERP Application</li>  
+                  <li>Add Checklist into ERP Application</li>    
+                </ul>
+              </td>
+            </tr>  
+            <tr>
+              <td>2014–2020</td>
+              <td>PT. Missiidea Selaras</td>
+              <td> 
+                <ul>
+                  <li>Develop Dashboard Courier</li>
+                  <li>Develop Lottery System </li>
+                  <li>Develop Digital Application</li>
+                  <li>Develop PPOB</li>
+                  <li>Develop Semen Tiga Roda Promotion</li>
+                  <li>Develop Sonice Promotion</li>
+                  <li>Develop Panasonic Promotion</li>
+                  <li>Backup Database Server </li>
+                  <li>Backup Email Server</li>
+                  <li>Develop Absence System</li>
+                  <li>Develop Inventory System</li>
+                </ul>
+              </td>
+            </tr>  
+            <tr>
+              <td>2013–2014</td>
+              <td>PT. Ladonya</td>
+              <td> 
+                <ul>
+                  <li>Develop Sistem Akademik Universitas Batam</li>
+                </ul>
+              </td>
+            </tr>  
+          </tbody>  
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact
+  <section id="contact" class="bio section">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Full Name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email Address">
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Please Enter your question here"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary mt-2" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="fixed-bottom text-center py-2">
+    &copy; 2025 My Portofolio
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
 </html>
