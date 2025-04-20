@@ -10,10 +10,13 @@
     body {
       scroll-behavior: smooth;
       padding-bottom: 80px;
+      background: url('assets/images/programmer.png') center center / cover no-repeat;
+      background-attachment: fixed;
     }
     .hero {
       height: 100vh;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      /* background: url('assets/images/programmer.png') center center / cover no-repeat; */
+      /* background: linear-gradient(to right, #1e3c72, #2a5298); */
       color: white;
       display: flex;
       justify-content: center;
@@ -31,18 +34,21 @@
     }
     .hero * {
       z-index: 2;
-}
-
+    }
 
     .bio {
       height: 100vh;
-      background: white;
-      color: black;
+      background: rgba(0, 0, 0, 0.5);
+      /* background: transparent; */
+      color: white;
       display: flex;
       justify-content: justify;
       align-items: start;
       flex-direction: justify;
     }
+
+    
+
 
     footer {
       background-color: #1e3c72;
@@ -81,7 +87,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="bio section bg-light">
+  <section id="about" class="bio section ">
     <div class="container" data-aos="fade-up">
         <h2 class="text-center mb-4">About Me</h2>
         <p class="text-justify">I am an experienced developer from Jakarta, I love to learn new things and read. I love new challenges to new programming languages. Learning programming languages ​​is not easy, it takes a process to understand new programming languages.</p>
@@ -134,12 +140,12 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="bio section bg-light">
+  <section id="experience" class="bio section ">
     <div class="container" data-aos="fade-up">
       <h2 class="text-center mb-4">Work Expriences</h2>
-      <div style="overflow-y:auto;height:90%;">
+      <div style="overflow-y:scroll;height:738px;background-color:white">
         <table class="table table-responsive">
-          <thead>
+          <thead style="position: sticky; top: 0; background-color: white; z-index: 2;">
             <tr>
               <th>Year</th>
               <th>Company Name</th>
@@ -197,21 +203,11 @@
               </td>
             </tr>  
             <tr>
-              <td>2014–2020</td>
-              <td>PT. Missiidea Selaras</td>
+              <td>2013–2014</td>
+              <td>PT. Ladonya</td>
               <td> 
                 <ul>
-                  <li>Develop Dashboard Courier</li>
-                  <li>Develop Lottery System </li>
-                  <li>Develop Digital Application</li>
-                  <li>Develop PPOB</li>
-                  <li>Develop Semen Tiga Roda Promotion</li>
-                  <li>Develop Sonice Promotion</li>
-                  <li>Develop Panasonic Promotion</li>
-                  <li>Backup Database Server </li>
-                  <li>Backup Email Server</li>
-                  <li>Develop Absence System</li>
-                  <li>Develop Inventory System</li>
+                  <li>Develop Sistem Akademik Universitas Batam</li>
                 </ul>
               </td>
             </tr>  
